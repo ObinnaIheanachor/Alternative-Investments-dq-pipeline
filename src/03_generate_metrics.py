@@ -8,7 +8,7 @@ import numpy as np
 import time
 from datetime import datetime
 from config import (get_db_connection, QUALITY_THRESHOLDS, MANAGER_TIERS,
-                   get_manager_tier, log_audit, print_header)
+                   get_manager_tier, log_audit, print_header, get_output_path)
 
 class MetricsGenerator:
     
@@ -373,10 +373,11 @@ class MetricsGenerator:
         
         # Save to CSV
         summary_df = pd.DataFrame([summary])
-        summary_df.to_csv('../data/output/executive_summary.csv', index=False)
+        output_path = get_output_path('executive_summary.csv')
+        summary_df.to_csv(output_path, index=False)
         
         duration = time.time() - start_time
-        print(f"   ✅ Summary report saved to data/output/executive_summary.csv")
+        print(f"   ✅ Summary report saved to {output_path}")
         print(f"   ⏱️  Duration: {duration:.2f}s")
         
         return summary

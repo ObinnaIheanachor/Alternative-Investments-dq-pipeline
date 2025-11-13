@@ -3,7 +3,7 @@ Export data to CSV files for Power BI consumption
 """
 
 import pandas as pd
-from config import get_db_connection, print_header
+from config import get_db_connection, print_header, get_output_path
 
 def export_all_tables():
     """
@@ -33,7 +33,7 @@ def export_all_tables():
             df = pd.read_sql(f'SELECT * FROM {table_name}', conn)
             
             # Export to CSV
-            output_path = f'../data/output/{table_name}.csv'
+            output_path = get_output_path(f'{table_name}.csv')
             df.to_csv(output_path, index=False)
             
             print(f"   ✅ {table_name:30s} → {len(df):>6} records")

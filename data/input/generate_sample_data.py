@@ -17,16 +17,22 @@ print("="*70)
 np.random.seed(42)
 random.seed(42)
 
+# Tunable dataset sizes for richer visuals
+NUM_PE_FUNDS = 75
+NUM_HF_FUNDS = 45
+NUM_VC_FUNDS = 40
+TOTAL_FUNDS = NUM_PE_FUNDS + NUM_HF_FUNDS + NUM_VC_FUNDS
+
 # ============================================================================
-# DATASET 1: FUND MASTER DATA (CSV FORMAT) - 100+ records
+# DATASET 1: FUND MASTER DATA (CSV FORMAT) - 150+ records
 # ============================================================================
 print("\n📊 Generating Fund Master Data (CSV)...")
 
 # Generate fund IDs
-pe_funds = [f'PE{str(i).zfill(3)}' for i in range(1, 51)]      # 50 PE funds
-hf_funds = [f'HF{str(i).zfill(3)}' for i in range(1, 31)]      # 30 HF funds
-vc_funds = [f'VC{str(i).zfill(3)}' for i in range(1, 26)]      # 25 VC funds
-all_fund_ids = pe_funds + hf_funds + vc_funds  # 105 total
+pe_funds = [f'PE{str(i).zfill(3)}' for i in range(1, NUM_PE_FUNDS + 1)]
+hf_funds = [f'HF{str(i).zfill(3)}' for i in range(1, NUM_HF_FUNDS + 1)]
+vc_funds = [f'VC{str(i).zfill(3)}' for i in range(1, NUM_VC_FUNDS + 1)]
+all_fund_ids = pe_funds + hf_funds + vc_funds
 
 # Manager names (realistic)
 managers = [
@@ -42,7 +48,7 @@ fund_data = {
     'fund_id': all_fund_ids,
     'fund_name': [f'{random.choice(["Alpha", "Beta", "Gamma", "Delta", "Omega", "Prime", "Summit", "Peak"])} Fund {random.choice(["I", "II", "III", "IV", "V", "VI"])}' for _ in all_fund_ids],
     'manager_name': [random.choice(managers) for _ in all_fund_ids],
-    'fund_type': ['Private Equity']*50 + ['Hedge Fund']*30 + ['Venture Capital']*25,
+    'fund_type': ['Private Equity'] * NUM_PE_FUNDS + ['Hedge Fund'] * NUM_HF_FUNDS + ['Venture Capital'] * NUM_VC_FUNDS,
     'strategy': [],
     'vintage_year': [],
     'inception_date': [],
@@ -99,7 +105,7 @@ for i, fund_id in enumerate(all_fund_ids):
     fund_data['currency'].append(currency)
     
     # Target size (usually same or slightly higher)
-    if random.random() > 0.3:
+    if random.random() > 0.25:
         target = round(size * random.uniform(1.0, 1.2), 2)
     else:
         target = None
@@ -119,10 +125,10 @@ for i, fund_id in enumerate(all_fund_ids):
     fund_data['administrator'].append(admin)
     
     # Last updated (recent dates, some stale)
-    if random.random() > 0.15:  # 85% recent
+    if random.random() > 0.20:  # 80% recent
         days_ago = random.randint(1, 90)
-    else:  # 15% stale (data quality issue)
-        days_ago = random.randint(180, 365)
+    else:  # 20% stale (data quality issue)
+        days_ago = random.randint(180, 540)
     
     last_update = datetime.now() - timedelta(days=days_ago)
     fund_data['last_updated'].append(last_update.strftime('%Y-%m-%d'))
@@ -158,22 +164,43 @@ funds_df.loc[30, 'target_size_millions'] = 3000
 funds_df.loc[18, 'inception_date'] = '1985-01-15'
 funds_df.loc[18, 'vintage_year'] = 1985
 
+# Issue 7: Regional timeliness problem (Low geography coverage → Timeliness)
+latam_indexes = funds_df[funds_df['geography'] == 'Latin America'].head(5).index
+for idx in latam_indexes:
+    stale_days = random.randint(365, 720)
+    last_update = datetime.now() - timedelta(days=stale_days)
+    funds_df.loc[idx, 'last_updated'] = last_update.strftime('%Y-%m-%d')
+
+# Issue 8: Administrator gaps for smaller managers
+small_funds = funds_df[funds_df['fund_size_millions'] < 300]
+if not small_funds.empty:
+    sample_size = min(5, len(small_funds))
+    smaller_managers = small_funds.sample(sample_size, random_state=1).index
+    funds_df.loc[smaller_managers, 'administrator'] = None
+
+# Issue 9: Duplicate manager + sector combos (helps duplicate visuals)
+funds_df.loc[TOTAL_FUNDS - 3, 'manager_name'] = funds_df.loc[TOTAL_FUNDS - 4, 'manager_name']
+funds_df.loc[TOTAL_FUNDS - 3, 'sector_focus'] = funds_df.loc[TOTAL_FUNDS - 4, 'sector_focus']
+funds_df.loc[TOTAL_FUNDS - 2, 'manager_name'] = funds_df.loc[TOTAL_FUNDS - 4, 'manager_name']
+funds_df.loc[TOTAL_FUNDS - 2, 'sector_focus'] = funds_df.loc[TOTAL_FUNDS - 5, 'sector_focus']
+
 # Save to CSV
 funds_df.to_csv('fund_master.csv', index=False)
 print(f"   ✅ Created fund_master.csv: {len(funds_df)} records")
 print(f"   ⚠️  Injected 15+ data quality issues")
 
 # ============================================================================
-# DATASET 2: FUND PERFORMANCE DATA (JSON FORMAT) - 200+ records
+# DATASET 2: FUND PERFORMANCE DATA (JSON FORMAT) - 400+ records
 # ============================================================================
 print("\n📊 Generating Fund Performance Data (JSON)...")
 
 performance_records = []
 
 # Generate quarterly performance for PE and VC funds
-pe_vc_funds = pe_funds + vc_funds  # 75 funds
-quarters = ['2023-Q4', '2024-Q1', '2024-Q2', '2024-Q3']
+pe_vc_funds = pe_funds + vc_funds  # broader coverage
+quarters = ['2023-Q3', '2023-Q4', '2024-Q1', '2024-Q2', '2024-Q3']
 quarter_dates = {
+    '2023-Q3': '2023-09-30',
     '2023-Q4': '2023-12-31',
     '2024-Q1': '2024-03-31',
     '2024-Q2': '2024-06-30',
@@ -184,7 +211,7 @@ for fund_id in pe_vc_funds:
     fund_type = 'PE' if fund_id.startswith('PE') else 'VC'
     
     # Not all funds report all quarters (missing data issue)
-    num_quarters = random.choice([2, 3, 4])
+    num_quarters = random.choice([3, 4, 5])
     reporting_quarters = random.sample(quarters, num_quarters)
     
     for quarter in reporting_quarters:
@@ -223,10 +250,10 @@ for fund_id in pe_vc_funds:
 # Generate monthly NAV for Hedge Funds
 for fund_id in hf_funds:
     # HF report monthly
-    months = pd.date_range(start='2024-04-30', end='2024-10-31', freq='M')
+    months = pd.date_range(start='2023-12-31', end='2024-10-31', freq='M')
     
     # Not all HF report all months (missing periods issue)
-    num_months = random.randint(4, 7)
+    num_months = random.randint(6, len(months))
     reporting_months = random.sample(list(months), num_months)
     reporting_months.sort()
     
@@ -279,6 +306,13 @@ performance_records[55]['rvpi'] = -1.2
 performance_records[8]['irr_net_pct'] = None
 performance_records[8]['tvpi'] = None
 
+# Issue 5: Hedge fund outliers (Timeliness + Accuracy)
+hf_outliers = [rec for rec in performance_records if rec['fund_id'].startswith('HF')][:6]
+for rec in hf_outliers:
+    rec['monthly_return_pct'] = random.choice([18.5, -12.3, 22.7])
+    if random.random() > 0.5:
+        rec['nav_per_share'] = None  # missing NAV for completeness issue
+
 # Save to JSON
 with open('fund_performance.json', 'w') as f:
     json.dump(performance_records, f, indent=2)
@@ -287,47 +321,55 @@ print(f"   ✅ Created fund_performance.json: {len(performance_records)} records
 print(f"   ⚠️  Injected 10+ data quality issues")
 
 # ============================================================================
-# DATASET 3: REGULATORY FILINGS (JSON FORMAT) - 50 records
+# DATASET 3: REGULATORY FILINGS (JSON FORMAT) - 80+ records
 # ============================================================================
 print("\n📊 Generating Regulatory Filings Data (JSON)...")
 
 regulatory_records = []
+filing_dates = ['2024-09-15', '2024-08-15', '2024-05-15', '2024-02-15', '2023-11-15']
 
-# Select random funds that should have regulatory filings
-filing_funds = random.sample(all_fund_ids, 50)
+# Select random funds that should have regulatory filings (some funds have two filings)
+filing_funds = random.sample(all_fund_ids, min(80, len(all_fund_ids)))
 
 for fund_id in filing_funds:
-    # Filing date (recent quarters)
-    filing_date = random.choice([
-        '2024-08-15', '2024-05-15', '2024-02-15', '2023-11-15'
-    ])
+    submission_count = random.choice([1, 2])  # multiple filings enable timeliness/duplicate visuals
     
-    dt = datetime.strptime(filing_date, '%Y-%m-%d')
-    quarter = (dt.month - 1) // 3 + 1
-    filing_quarter = f"{dt.year}-Q{quarter}"
-    
-    # Get fund size from master data for comparison
-    fund_row = funds_df[funds_df['fund_id'] == fund_id].iloc[0]
-    reported_size = fund_row['fund_size_millions']
-    
-    # Reported AUM (might differ from master - cross-source validation issue)
-    if random.random() > 0.20:  # 80% match closely
-        reported_aum = round(reported_size * random.uniform(0.95, 1.05), 2)
-    else:  # 20% have significant variance (data quality issue)
-        reported_aum = round(reported_size * random.uniform(0.70, 1.30), 2)
-    
-    record = {
-        'fund_id': fund_id,
-        'filing_type': random.choice(['Form PF', 'Form ADV', 'AIFMD']),
-        'filing_date': filing_date,
-        'filing_quarter': filing_quarter,
-        'reported_aum_millions': reported_aum,
-        'reported_strategy': fund_row['strategy'],
-        'num_investors': random.randint(10, 500),
-        'source': 'SEC EDGAR'
-    }
-    
-    regulatory_records.append(record)
+    for _ in range(submission_count):
+        filing_date = random.choice(filing_dates)
+        dt = datetime.strptime(filing_date, '%Y-%m-%d')
+        quarter = (dt.month - 1) // 3 + 1
+        filing_quarter = f"{dt.year}-Q{quarter}"
+        
+        fund_row = funds_df[funds_df['fund_id'] == fund_id].iloc[0]
+        reported_size = fund_row['fund_size_millions']
+        
+        # Reported AUM (vary variance more aggressively)
+        if random.random() > 0.25:
+            reported_aum = round(reported_size * random.uniform(0.95, 1.05), 2)
+        else:
+            reported_aum = round(reported_size * random.uniform(0.60, 1.40), 2)
+        
+        record = {
+            'fund_id': fund_id,
+            'filing_type': random.choice(['Form PF', 'Form ADV', 'AIFMD']),
+            'filing_date': filing_date,
+            'filing_quarter': filing_quarter,
+            'reported_aum_millions': reported_aum,
+            'reported_strategy': fund_row['strategy'],
+            'num_investors': random.randint(10, 500),
+            'source': random.choice(['SEC EDGAR', 'ESMA', 'FCA'])
+        }
+        
+        regulatory_records.append(record)
+
+# Introduce strategy mismatches for cross-source variance visuals
+mismatch_count = max(5, len(regulatory_records) // 8)
+strategy_values = sum(strategy_map.values(), [])
+
+for idx in random.sample(range(len(regulatory_records)), mismatch_count):
+    record = regulatory_records[idx]
+    valid_choices = [s for s in strategy_values if s != record['reported_strategy']]
+    record['reported_strategy'] = random.choice(valid_choices)
 
 # Save to JSON
 with open('regulatory_filings.json', 'w') as f:
@@ -348,10 +390,10 @@ print(f"  2. fund_performance.json     : {len(performance_records)} performance 
 print(f"  3. regulatory_filings.json   : {len(regulatory_records)} regulatory filings")
 print(f"\nTotal Records: {len(funds_df) + len(performance_records) + len(regulatory_records)}")
 print(f"\nData Quality Issues Injected:")
-print(f"  • Completeness issues (missing administrators, null values)")
-print(f"  • Accuracy issues (negative values, impossible IRRs, future dates)")
-print(f"  • Consistency issues (TVPI calculation errors)")
-print(f"  • Timeliness issues (stale last_updated dates)")
-print(f"  • Duplicate issues (duplicate fund names)")
-print(f"  • Cross-source variance (regulatory vs master data)")
+print(f"  • Completeness issues (missing administrators, null NAV, null IRR)")
+print(f"  • Accuracy issues (negative values, impossible IRRs, strategy mismatches)")
+print(f"  • Consistency issues (TVPI vs DPI/RVPI and fund size vs target)")
+print(f"  • Timeliness issues (stale last_updated dates, sparse filings)")
+print(f"  • Duplicate issues (fund names, manager/sector combos)")
+print(f"  • Cross-source variance (regulatory vs master data, AUM swings)")
 print("\n" + "="*70)

@@ -8,7 +8,7 @@ import numpy as np
 import time
 from datetime import datetime, timedelta
 from config import (get_db_connection, VALIDATION_RULES, QUALITY_THRESHOLDS,
-                   log_audit, print_header)
+                   log_audit, print_header, get_output_path)
 
 class DataQualityValidator:
     
@@ -443,8 +443,9 @@ class DataQualityValidator:
             print(f"   🚨 Created {len(self.alerts)} critical alerts")
             
             # Write alerts to CSV for immediate visibility
-            alerts_df.to_csv('../data/output/CRITICAL_ALERTS.csv', index=False)
-            print(f"   📄 Critical alerts exported to data/output/CRITICAL_ALERTS.csv")
+            alerts_path = get_output_path('CRITICAL_ALERTS.csv')
+            alerts_df.to_csv(alerts_path, index=False)
+            print(f"   📄 Critical alerts exported to {alerts_path}")
     
     def print_summary(self):
         """
