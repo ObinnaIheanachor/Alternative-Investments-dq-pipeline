@@ -6,7 +6,7 @@ Loads data from multiple formats and normalizes to standard schema
 import pandas as pd
 import json
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 from config import (get_db_connection, initialize_database, CURRENCY_RATES, 
                    convert_to_usd, log_audit, print_header, get_input_path)
 
@@ -135,59 +135,6 @@ class DataIngestionPipeline:
             print(f"   ❌ Error: {str(e)}")
             return False
     
-    def _apply_fund_master_remediations(self, df):
-        """
-        Apply small automatic improvements so quality nudges upward each run
-        """
-        fixes = []
-        
-        # Convert negative fund sizes to positive values
-        negative_mask = df['fund_size_millions'].notna() & (df['fund_size_millions'] < 0)
-        if negative_mask.any():
-            count = int(negative_mask.sum())
-            df.loc[negative_mask, 'fund_size_millions'] = df.loc[negative_mask, 'fund_size_millions'].abs()
-            fixes.append(f"Converted {count} negative fund sizes to positive values")
-        
-        # Future vintage years -> clamp to current year
-        current_year = datetime.now().year
-        future_mask = df['vintage_year'].notna() & (df['vintage_year'] > current_year)
-        if future_mask.any():
-            count = int(future_mask.sum())
-            df.loc[future_mask, 'vintage_year'] = current_year
-            fixes.append(f"Adjusted {count} future vintage years down to {current_year}")
-        
-        # Ensure target size is not dramatically smaller than reported size
-        compare_mask = (
-            df['target_size_millions'].notna() & 
-            df['fund_size_millions'].notna() &
-            (df['target_size_millions'] < df['fund_size_millions'])
-        )
-        if compare_mask.any():
-            count = int(compare_mask.sum())
-            df.loc[compare_mask, 'target_size_millions'] = (
-                df.loc[compare_mask, 'fund_size_millions'] * 1.05
-            ).round(2)
-            fixes.append(f"Raised target sizes for {count} funds that were below actual size")
-        
-        # Fill missing administrators with placeholder
-        missing_admin = df['administrator'].isna()
-        if missing_admin.any():
-            count = int(missing_admin.sum())
-            df.loc[missing_admin, 'administrator'] = 'Pending Assignment'
-            fixes.append(f"Populated administrator for {count} funds with 'Pending Assignment'")
-        
-        # Refresh extremely stale last_updated timestamps
-        parsed_dates = pd.to_datetime(df['last_updated'], errors='coerce')
-        stale_threshold = datetime.now() - timedelta(days=365)
-        stale_mask = parsed_dates.notna() & (parsed_dates < stale_threshold)
-        if stale_mask.any():
-            count = int(stale_mask.sum())
-            refreshed_date = (datetime.now() - timedelta(days=120)).strftime('%Y-%m-%d')
-            df.loc[stale_mask, 'last_updated'] = refreshed_date
-            fixes.append(f"Refreshed {count} stale last_updated dates")
-        
-        return fixes
-    
     def standardize_fund_master(self):
         """
         Standardize fund master data:
@@ -202,12 +149,6 @@ class DataIngestionPipeline:
             # Load raw data
             df = pd.read_sql('SELECT * FROM raw_fund_master', self.conn)
             print(f"   📊 Processing {len(df)} fund records...")
-            
-            remediation_notes = self._apply_fund_master_remediations(df)
-            if remediation_notes:
-                print("   🩺 Applied proactive fixes:")
-                for note in remediation_notes:
-                    print(f"      • {note}")
             
             # Currency conversion
             print("   💱 Converting currencies to USD...")
@@ -273,59 +214,6 @@ class DataIngestionPipeline:
             print(f"   ❌ Error: {str(e)}")
             return False
     
-    def _apply_performance_remediations(self, df):
-        """
-        Light-touch fixes to demonstrate incremental quality improvements
-        """
-        fixes = []
-        
-        # Clamp IRR to realistic bounds
-        irr_mask = df['irr_net_pct'].notna()
-        if irr_mask.any():
-            clipped = df.loc[irr_mask, 'irr_net_pct'].clip(-50, 120)
-            adjustments = int((df.loc[irr_mask, 'irr_net_pct'] != clipped).sum())
-            if adjustments:
-                df.loc[irr_mask, 'irr_net_pct'] = clipped
-                fixes.append(f"Capped {adjustments} IRR values to +/-50-120% range")
-        
-        # Fix negative DPI/RVPI values
-        negative_dpi = df['dpi'].notna() & (df['dpi'] < 0)
-        if negative_dpi.any():
-            count = int(negative_dpi.sum())
-            df.loc[negative_dpi, 'dpi'] = df.loc[negative_dpi, 'dpi'].abs()
-            fixes.append(f"Converted {count} negative DPI values to positive")
-        
-        negative_rvpi = df['rvpi'].notna() & (df['rvpi'] < 0)
-        if negative_rvpi.any():
-            count = int(negative_rvpi.sum())
-            df.loc[negative_rvpi, 'rvpi'] = df.loc[negative_rvpi, 'rvpi'].abs()
-            fixes.append(f"Converted {count} negative RVPI values to positive")
-        
-        # Recalculate TVPI where DPI/RVPI are present
-        recalculated_tvpi = (df['dpi'].fillna(0) + df['rvpi'].fillna(0)).round(2)
-        tvpi_discrepancy = df['tvpi'].notna() & (df['tvpi'] - recalculated_tvpi).abs() > 0.05
-        if tvpi_discrepancy.any():
-            count = int(tvpi_discrepancy.sum())
-            df.loc[tvpi_discrepancy, 'tvpi'] = recalculated_tvpi[tvpi_discrepancy]
-            fixes.append(f"Recalculated TVPI for {count} records to align with DPI+RVPI")
-        
-        missing_tvpi = df['tvpi'].isna() & df['dpi'].notna() & df['rvpi'].notna()
-        if missing_tvpi.any():
-            count = int(missing_tvpi.sum())
-            df.loc[missing_tvpi, 'tvpi'] = recalculated_tvpi[missing_tvpi]
-            fixes.append(f"Backfilled TVPI for {count} records using DPI+RVPI")
-        
-        # Bring extreme monthly returns closer to range to avoid false alerts
-        monthly_mask = df['monthly_return_pct'].notna()
-        if monthly_mask.any():
-            clipped = df.loc[monthly_mask, 'monthly_return_pct'].clip(-8, 10)
-            adjustments = int((df.loc[monthly_mask, 'monthly_return_pct'] != clipped).sum())
-            if adjustments:
-                df.loc[monthly_mask, 'monthly_return_pct'] = clipped
-                fixes.append(f"Capped {adjustments} monthly return outliers to -8%/10% band")
-        
-        return fixes
-    
     def standardize_performance(self):
         """
         Standardize performance data:
@@ -340,12 +228,6 @@ class DataIngestionPipeline:
             # Load raw data
             df = pd.read_sql('SELECT * FROM raw_performance', self.conn)
             print(f"   📊 Processing {len(df)} performance records...")
-            
-            remediation_notes = self._apply_performance_remediations(df)
-            if remediation_notes:
-                print("   🩺 Applied performance data fixes:")
-                for note in remediation_notes:
-                    print(f"      • {note}")
             
             # Calculate what TVPI should be (for validation)
             df['tvpi_calculated'] = df['dpi'] + df['rvpi']
