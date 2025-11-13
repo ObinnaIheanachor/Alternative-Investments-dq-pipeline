@@ -1,0 +1,5 @@
+alert_id,fund_id,rule_violated,severity,description,detected_timestamp,status,acknowledged_by,acknowledged_timestamp
+ALERT-0001,PE008,Accuracy,Critical,fund_size_usd_millions out of valid range: -317.5,2025-11-12T15:07:55.816080,ACTIVE,,
+ALERT-0002,PE024,Accuracy,Critical,fund_size_usd_millions out of valid range: -10.05,2025-11-12T15:07:55.816080,ACTIVE,,
+ALERT-0003,PE005,Accuracy,Critical,Implausible irr_net_pct: 250.0,2025-11-12T15:07:55.816080,ACTIVE,,
+ALERT-0004,PE010,Accuracy,Critical,Implausible irr_net_pct: -150.0,2025-11-12T15:07:55.816080,ACTIVE,,

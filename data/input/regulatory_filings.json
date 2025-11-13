@@ -1,0 +1,502 @@
+[
+  {
+    "fund_id": "PE008",
+    "filing_type": "AIFMD",
+    "filing_date": "2023-11-15",
+    "filing_quarter": "2023-Q4",
+    "reported_aum_millions": -197.45,
+    "reported_strategy": "Distressed",
+    "num_investors": 311,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE050",
+    "filing_type": "Form PF",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 3556.77,
+    "reported_strategy": "Mezzanine",
+    "num_investors": 412,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF017",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 1668.2,
+    "reported_strategy": "Quantitative",
+    "num_investors": 145,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF004",
+    "filing_type": "Form ADV",
+    "filing_date": "2023-11-15",
+    "filing_quarter": "2023-Q4",
+    "reported_aum_millions": 7448.97,
+    "reported_strategy": "Event Driven",
+    "num_investors": 29,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF019",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 4945.92,
+    "reported_strategy": "Event Driven",
+    "num_investors": 358,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC008",
+    "filing_type": "Form ADV",
+    "filing_date": "2023-11-15",
+    "filing_quarter": "2023-Q4",
+    "reported_aum_millions": 1695.0,
+    "reported_strategy": "Late Stage",
+    "num_investors": 363,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF011",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 1610.55,
+    "reported_strategy": "Event Driven",
+    "num_investors": 469,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF024",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 15687.6,
+    "reported_strategy": "Event Driven",
+    "num_investors": 169,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE031",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 5179.12,
+    "reported_strategy": "Mezzanine",
+    "num_investors": 60,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC019",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 940.01,
+    "reported_strategy": "Early Stage",
+    "num_investors": 406,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE039",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 3569.1,
+    "reported_strategy": "Distressed",
+    "num_investors": 55,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE011",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 3241.34,
+    "reported_strategy": "Buyout",
+    "num_investors": 389,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF001",
+    "filing_type": "Form PF",
+    "filing_date": "2023-11-15",
+    "filing_quarter": "2023-Q4",
+    "reported_aum_millions": 7335.41,
+    "reported_strategy": "Event Driven",
+    "num_investors": 273,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC012",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 1405.89,
+    "reported_strategy": "Growth",
+    "num_investors": 79,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE005",
+    "filing_type": "Form PF",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 3662.47,
+    "reported_strategy": "Distressed",
+    "num_investors": 438,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF015",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 4860.59,
+    "reported_strategy": "Event Driven",
+    "num_investors": 370,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC018",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 1350.08,
+    "reported_strategy": "Early Stage",
+    "num_investors": 213,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC023",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 704.39,
+    "reported_strategy": "Seed",
+    "num_investors": 314,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC009",
+    "filing_type": "AIFMD",
+    "filing_date": "2023-11-15",
+    "filing_quarter": "2023-Q4",
+    "reported_aum_millions": 809.15,
+    "reported_strategy": "Late Stage",
+    "num_investors": 292,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF030",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 2565.89,
+    "reported_strategy": "Event Driven",
+    "num_investors": 393,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE019",
+    "filing_type": "Form PF",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 1558.73,
+    "reported_strategy": "Distressed",
+    "num_investors": 447,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE016",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 4387.54,
+    "reported_strategy": "Buyout",
+    "num_investors": 115,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF008",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 3308.01,
+    "reported_strategy": "Multi-Strategy",
+    "num_investors": 14,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE023",
+    "filing_type": "AIFMD",
+    "filing_date": "2023-11-15",
+    "filing_quarter": "2023-Q4",
+    "reported_aum_millions": 2002.17,
+    "reported_strategy": "Growth Equity",
+    "num_investors": 420,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE022",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 4328.68,
+    "reported_strategy": "Distressed",
+    "num_investors": 374,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE028",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 3755.11,
+    "reported_strategy": "Mezzanine",
+    "num_investors": 245,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE025",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 2977.75,
+    "reported_strategy": "Growth Equity",
+    "num_investors": 432,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE017",
+    "filing_type": "AIFMD",
+    "filing_date": "2023-11-15",
+    "filing_quarter": "2023-Q4",
+    "reported_aum_millions": 1227.86,
+    "reported_strategy": "Buyout",
+    "num_investors": 441,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE006",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 520.8,
+    "reported_strategy": "Buyout",
+    "num_investors": 162,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF005",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 4763.45,
+    "reported_strategy": "Event Driven",
+    "num_investors": 337,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC014",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 792.93,
+    "reported_strategy": "Seed",
+    "num_investors": 497,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF006",
+    "filing_type": "Form PF",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 3699.85,
+    "reported_strategy": "Multi-Strategy",
+    "num_investors": 470,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE026",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 3184.55,
+    "reported_strategy": "Buyout",
+    "num_investors": 216,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC005",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 1082.07,
+    "reported_strategy": "Early Stage",
+    "num_investors": 264,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE034",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 550.67,
+    "reported_strategy": "Growth Equity",
+    "num_investors": 387,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE041",
+    "filing_type": "Form PF",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 2583.26,
+    "reported_strategy": "Mezzanine",
+    "num_investors": 185,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE009",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 4099.11,
+    "reported_strategy": "Mezzanine",
+    "num_investors": 474,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE012",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 723.91,
+    "reported_strategy": "Mezzanine",
+    "num_investors": 458,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC024",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 1895.47,
+    "reported_strategy": "Growth",
+    "num_investors": 142,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC013",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 991.82,
+    "reported_strategy": "Seed",
+    "num_investors": 55,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE042",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 4869.45,
+    "reported_strategy": "Mezzanine",
+    "num_investors": 225,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE036",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 4408.15,
+    "reported_strategy": "Mezzanine",
+    "num_investors": 445,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF021",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 6444.85,
+    "reported_strategy": "Quantitative",
+    "num_investors": 307,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE030",
+    "filing_type": "Form PF",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 4324.23,
+    "reported_strategy": "Distressed",
+    "num_investors": 454,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF009",
+    "filing_type": "Form PF",
+    "filing_date": "2023-11-15",
+    "filing_quarter": "2023-Q4",
+    "reported_aum_millions": 10350.96,
+    "reported_strategy": "Global Macro",
+    "num_investors": 80,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "VC007",
+    "filing_type": "Form ADV",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 1427.16,
+    "reported_strategy": "Late Stage",
+    "num_investors": 83,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE001",
+    "filing_type": "Form PF",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 4489.01,
+    "reported_strategy": "Buyout",
+    "num_investors": 259,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "HF016",
+    "filing_type": "AIFMD",
+    "filing_date": "2024-02-15",
+    "filing_quarter": "2024-Q1",
+    "reported_aum_millions": 4562.77,
+    "reported_strategy": "Multi-Strategy",
+    "num_investors": 39,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE045",
+    "filing_type": "Form PF",
+    "filing_date": "2024-08-15",
+    "filing_quarter": "2024-Q3",
+    "reported_aum_millions": 1158.2,
+    "reported_strategy": "Mezzanine",
+    "num_investors": 305,
+    "source": "SEC EDGAR"
+  },
+  {
+    "fund_id": "PE040",
+    "filing_type": "Form PF",
+    "filing_date": "2024-05-15",
+    "filing_quarter": "2024-Q2",
+    "reported_aum_millions": 4955.87,
+    "reported_strategy": "Distressed",
+    "num_investors": 76,
+    "source": "SEC EDGAR"
+  }
+]

@@ -1,0 +1,55 @@
+id,metric_date,metric_name,metric_value,target_value,entity_type,entity_name,calculation_timestamp
+1,2025-11-12,Completeness Score,98.48,95.0,System,Overall,2025-11-12T16:50:57.324990
+2,2025-11-12,Completeness Score,98.6,95.0,Fund Type,Private Equity,2025-11-12T16:50:57.324990
+3,2025-11-12,Completeness Score,98.67,95.0,Fund Type,Hedge Fund,2025-11-12T16:50:57.324990
+4,2025-11-12,Completeness Score,98.0,95.0,Fund Type,Venture Capital,2025-11-12T16:50:57.324990
+5,2025-11-12,Accuracy Score,89.52,98.0,System,Overall,2025-11-12T16:50:57.324990
+6,2025-11-12,Accuracy Score,78.0,98.0,Fund Type,Private Equity,2025-11-12T16:50:57.324990
+7,2025-11-12,Accuracy Score,100.0,98.0,Fund Type,Hedge Fund,2025-11-12T16:50:57.324990
+8,2025-11-12,Accuracy Score,100.0,98.0,Fund Type,Venture Capital,2025-11-12T16:50:57.324990
+9,2025-11-12,Timeliness Score,87.62,95.0,System,Overall,2025-11-12T16:50:57.324990
+10,2025-11-12,Timeliness Score,86.0,95.0,Fund Type,Private Equity,2025-11-12T16:50:57.324990
+11,2025-11-12,Timeliness Score,86.67,95.0,Fund Type,Hedge Fund,2025-11-12T16:50:57.324990
+12,2025-11-12,Timeliness Score,92.0,95.0,Fund Type,Venture Capital,2025-11-12T16:50:57.324990
+13,2025-11-12,Manager Quality Score,50.0,85.0,Manager,Silver Lake Partners,2025-11-12T16:50:57.324990
+14,2025-11-12,Manager Quality Tier,50.0,85.0,Manager,Silver Lake Partners,2025-11-12T16:50:57.324990
+15,2025-11-12,Manager Quality Score,16.67,85.0,Manager,KKR & Co,2025-11-12T16:50:57.324990
+16,2025-11-12,Manager Quality Tier,16.67,85.0,Manager,KKR & Co,2025-11-12T16:50:57.324990
+17,2025-11-12,Manager Quality Score,-62.5,85.0,Manager,Benchmark Capital,2025-11-12T16:50:57.324990
+18,2025-11-12,Manager Quality Tier,-62.5,85.0,Manager,Benchmark Capital,2025-11-12T16:50:57.324990
+19,2025-11-12,Manager Quality Score,-33.33,85.0,Manager,Renaissance Technologies,2025-11-12T16:50:57.324990
+20,2025-11-12,Manager Quality Tier,-33.33,85.0,Manager,Renaissance Technologies,2025-11-12T16:50:57.324990
+21,2025-11-12,Manager Quality Score,-100.0,85.0,Manager,Sequoia Capital,2025-11-12T16:50:57.324990
+22,2025-11-12,Manager Quality Tier,-100.0,85.0,Manager,Sequoia Capital,2025-11-12T16:50:57.324990
+23,2025-11-12,Manager Quality Score,-10.0,85.0,Manager,Warburg Pincus,2025-11-12T16:50:57.324990
+24,2025-11-12,Manager Quality Tier,-10.0,85.0,Manager,Warburg Pincus,2025-11-12T16:50:57.324990
+25,2025-11-12,Manager Quality Score,30.0,85.0,Manager,Blackstone Group,2025-11-12T16:50:57.324990
+26,2025-11-12,Manager Quality Tier,30.0,85.0,Manager,Blackstone Group,2025-11-12T16:50:57.324990
+27,2025-11-12,Manager Quality Score,-50.0,85.0,Manager,Tiger Global Management,2025-11-12T16:50:57.324990
+28,2025-11-12,Manager Quality Tier,-50.0,85.0,Manager,Tiger Global Management,2025-11-12T16:50:57.324990
+29,2025-11-12,Manager Quality Score,27.27,85.0,Manager,TPG Capital,2025-11-12T16:50:57.324990
+30,2025-11-12,Manager Quality Tier,27.27,85.0,Manager,TPG Capital,2025-11-12T16:50:57.324990
+31,2025-11-12,Manager Quality Score,-14.29,85.0,Manager,Vista Equity Partners,2025-11-12T16:50:57.324990
+32,2025-11-12,Manager Quality Tier,-14.29,85.0,Manager,Vista Equity Partners,2025-11-12T16:50:57.324990
+33,2025-11-12,Manager Quality Score,-83.33,85.0,Manager,Andreessen Horowitz,2025-11-12T16:50:57.324990
+34,2025-11-12,Manager Quality Tier,-83.33,85.0,Manager,Andreessen Horowitz,2025-11-12T16:50:57.324990
+35,2025-11-12,Manager Quality Score,0.0,85.0,Manager,Carlyle Group,2025-11-12T16:50:57.324990
+36,2025-11-12,Manager Quality Tier,0.0,85.0,Manager,Carlyle Group,2025-11-12T16:50:57.324990
+37,2025-11-12,Manager Quality Score,62.5,85.0,Manager,Bridgewater Associates,2025-11-12T16:50:57.324990
+38,2025-11-12,Manager Quality Tier,62.5,85.0,Manager,Bridgewater Associates,2025-11-12T16:50:57.324990
+39,2025-11-12,Manager Quality Score,11.11,85.0,Manager,Acme Capital Partners,2025-11-12T16:50:57.324990
+40,2025-11-12,Manager Quality Tier,11.11,85.0,Manager,Acme Capital Partners,2025-11-12T16:50:57.324990
+41,2025-11-12,Manager Quality Score,-75.0,85.0,Manager,Apollo Global Management,2025-11-12T16:50:57.324990
+42,2025-11-12,Manager Quality Tier,-75.0,85.0,Manager,Apollo Global Management,2025-11-12T16:50:57.324990
+43,2025-11-12,Overall Data Quality Score,91.83,90.0,System,Overall,2025-11-12T16:50:57.324990
+44,2025-11-12,Total Issues,113.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+45,2025-11-12,Critical Issues,4.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+46,2025-11-12,High Issues,50.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+47,2025-11-12,Medium Issues,59.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+48,2025-11-12,Low Issues,0.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+49,2025-11-12,Issues - Completeness,46.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+50,2025-11-12,Issues - Accuracy,8.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+51,2025-11-12,Issues - Consistency,6.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+52,2025-11-12,Issues - Timeliness,16.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+53,2025-11-12,Issues - Duplicates,16.0,0.0,System,Overall,2025-11-12T16:50:57.324990
+54,2025-11-12,Issues - Cross-Source Variance,21.0,0.0,System,Overall,2025-11-12T16:50:57.324990
