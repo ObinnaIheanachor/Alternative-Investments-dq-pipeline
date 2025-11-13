@@ -5,13 +5,25 @@ Configuration and Database Setup for Bloomberg DQ System
 import sqlite3
 from datetime import datetime
 import os
+from pathlib import Path
 
 # ============================================================================
 # CONFIGURATION SETTINGS
 # ============================================================================
 
+# Base directories resolved relative to this file so scripts can run from any CWD
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / 'data'
+DATA_INPUT_DIR = DATA_DIR / 'input'
+DATA_OUTPUT_DIR = DATA_DIR / 'output'
+DATABASE_DIR = BASE_DIR / 'database'
+
+# Ensure core directories exist (safe if they already exist)
+for path in (DATA_INPUT_DIR, DATA_OUTPUT_DIR, DATABASE_DIR):
+    path.mkdir(parents=True, exist_ok=True)
+
 # Database path
-DB_PATH = os.path.join('..', 'database', 'bloomberg_dq.db')
+DB_PATH = DATABASE_DIR / 'bloomberg_dq.db'
 
 # Data quality thresholds
 QUALITY_THRESHOLDS = {
@@ -92,12 +104,28 @@ def get_db_connection():
     Creates database file if it doesn't exist
     """
     # Ensure database directory exists
-    db_dir = os.path.dirname(DB_PATH)
-    if not os.path.exists(db_dir):
-        os.makedirs(db_dir)
+    db_dir = DB_PATH.parent
+    if not db_dir.exists():
+        db_dir.mkdir(parents=True, exist_ok=True)
     
     conn = sqlite3.connect(DB_PATH)
     return conn
+
+
+def get_input_path(filename):
+    """
+    Return absolute Path for a file in the data/input directory
+    """
+    return DATA_INPUT_DIR / filename
+
+
+def get_output_path(filename):
+    """
+    Return absolute Path for a file in the data/output directory,
+    creating the directory if it is missing
+    """
+    DATA_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    return DATA_OUTPUT_DIR / filename
 
 def initialize_database():
     """
