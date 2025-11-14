@@ -1,5 +1,9 @@
 alert_id,fund_id,rule_violated,severity,description,detected_timestamp,status,acknowledged_by,acknowledged_timestamp
-ALERT-0001,PE008,Accuracy,Critical,fund_size_usd_millions out of valid range: -317.5,2025-11-13T23:19:23.413878,ACTIVE,,
-ALERT-0002,PE024,Accuracy,Critical,fund_size_usd_millions out of valid range: -10.05,2025-11-13T23:19:23.413878,ACTIVE,,
-ALERT-0003,PE005,Accuracy,Critical,Implausible irr_net_pct: 250.0,2025-11-13T23:19:23.413878,ACTIVE,,
-ALERT-0004,PE010,Accuracy,Critical,Implausible irr_net_pct: -150.0,2025-11-13T23:19:23.413878,ACTIVE,,
+ALERT-0001,PE008,Accuracy,Critical,fund_size_usd_millions out of valid range: -317.5,2025-11-14T02:38:48.941026,ACTIVE,,
+ALERT-0002,PE024,Accuracy,Critical,fund_size_usd_millions out of valid range: -10.05,2025-11-14T02:38:48.941026,ACTIVE,,
+ALERT-0003,PE005,Accuracy,Critical,Implausible irr_net_pct: 250.0,2025-11-14T02:38:48.941026,ACTIVE,,
+ALERT-0004,PE010,Accuracy,Critical,Implausible irr_net_pct: -150.0,2025-11-14T02:38:48.941026,ACTIVE,,
+ALERT-0005,PE008,Cross-Source Variance,Critical,Significant variance between manager-reported ($-317.50M) and regulatory filing ($-197.45M): 60.8%,2025-11-14T02:38:48.941026,ACTIVE,,
+ALERT-0006,PE017,Cross-Source Variance,Critical,Significant variance between manager-reported ($8.65M) and regulatory filing ($1227.86M): 99.3%,2025-11-14T02:38:48.941026,ACTIVE,,
+ALERT-0007,PE028,Cross-Source Variance,Critical,Significant variance between manager-reported ($25.47M) and regulatory filing ($3755.11M): 99.3%,2025-11-14T02:38:48.941026,ACTIVE,,
+ALERT-0008,PE045,Cross-Source Variance,Critical,Significant variance between manager-reported ($1514.94M) and regulatory filing ($1158.20M): 30.8%,2025-11-14T02:38:48.941026,ACTIVE,,

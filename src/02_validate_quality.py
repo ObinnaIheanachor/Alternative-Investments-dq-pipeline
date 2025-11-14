@@ -286,7 +286,12 @@ class DataQualityValidator:
         
         for _, row in stale.iterrows():
             days_old = (datetime.now() - row['last_updated']).days
-            severity = 'High' if days_old > 180 else 'Medium'
+            if days_old > 365:
+                severity = 'Critical'
+            elif days_old > 180:
+                severity = 'High'
+            else:
+                severity = 'Medium'
             
             self.log_issue(
                 row['fund_id'],
@@ -403,7 +408,12 @@ class DataQualityValidator:
         significant_variance = comparison[comparison['variance_pct'] > threshold]
         
         for _, row in significant_variance.iterrows():
-            severity = 'High' if row['variance_pct'] > 15 else 'Medium'
+            if row['variance_pct'] > 30:
+                severity = 'Critical'
+            elif row['variance_pct'] > 15:
+                severity = 'High'
+            else:
+                severity = 'Medium'
             
             self.log_issue(
                 row['fund_id'],
