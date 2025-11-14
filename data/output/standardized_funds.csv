@@ -1,106 +1,106 @@
 fund_id,fund_name,manager_name,fund_type,strategy,vintage_year,inception_date,fund_size_usd_millions,original_currency,original_fund_size,target_size_usd_millions,status,geography,sector_focus,administrator,last_updated,standardization_timestamp,data_quality_passed
-PE001,Beta Fund I,Silver Lake Partners,Private Equity,Buyout,2024,2024-08-17,4637.24,USD,4637.24,,Fundraising,Europe,Healthcare,Northern Trust,2025-10-12,2025-11-13T23:19:16.991062,0
-PE002,Omega Fund II,KKR & Co,Private Equity,Mezzanine,2016,2016-10-08,3105.14,USD,3105.14,,Harvesting,Asia Pacific,Industrials,State Street,2025-10-09,2025-11-13T23:19:16.991062,0
-PE003,Delta Fund II,Benchmark Capital,Private Equity,Mezzanine,2017,2017-11-21,1849.99,USD,1849.99,1876.83,Liquidated,Latin America,Healthcare,SS&C Technologies,2025-10-09,2025-11-13T23:19:16.991062,0
-PE004,Beta Fund VI,Renaissance Technologies,Private Equity,Growth Equity,2020,2020-02-08,2162.87,USD,2162.87,2467.2,Fundraising,Middle East,Consumer,,2025-04-12,2025-11-13T23:19:16.991062,0
-PE005,Beta Fund V,Renaissance Technologies,Private Equity,Distressed,2016,2016-02-24,2989.51,USD,2989.51,3418.57,Investing,Middle East,Consumer,Northern Trust,2025-11-05,2025-11-13T23:19:16.991062,0
-PE006,Summit Fund I,Sequoia Capital,Private Equity,Buyout,2021,2021-05-02,557.2368000000001,EUR,515.96,586.4292,Liquidated,Latin America,Real Estate,Northern Trust,2024-11-21,2025-11-13T23:19:16.991062,0
-PE007,Alpha Fund I,Sequoia Capital,Private Equity,Growth Equity,2023,2023-01-27,2161.47,USD,2161.47,2179.55,Harvesting,North America,Energy,SS&C Technologies,2025-10-29,2025-11-13T23:19:16.991062,0
-PE008,Delta Fund II,Warburg Pincus,Private Equity,Distressed,2023,2023-07-20,-317.5,GBP,-250.0,,Investing,Europe,Real Estate,SS&C Technologies,2025-09-30,2025-11-13T23:19:16.991062,0
-PE009,Alpha Fund V,Blackstone Group,Private Equity,Mezzanine,2018,2018-05-06,4043.19,USD,4043.19,4737.48,Investing,Europe,Multi-Sector,Citco,2025-10-13,2025-11-13T23:19:16.991062,0
-PE010,Delta Fund VI,Tiger Global Management,Private Equity,Growth Equity,2015,2015-11-07,2293.1,USD,2293.1,,Harvesting,Asia Pacific,Real Estate,State Street,2025-09-30,2025-11-13T23:19:16.991062,0
-PE011,Summit Fund II,Warburg Pincus,Private Equity,Buyout,2016,2016-05-06,3486.1680000000006,CHF,3112.65,,Liquidated,Asia Pacific,Energy,Citco,2025-10-28,2025-11-13T23:19:16.991062,0
-PE012,Peak Fund V,Tiger Global Management,Private Equity,Mezzanine,2024,2024-04-09,699.74,USD,699.74,812.61,Investing,Asia Pacific,Real Estate,SS&C Technologies,2025-09-30,2025-11-13T23:19:16.991062,0
-PE013,Omega Fund I,TPG Capital,Private Equity,Distressed,2016,2016-12-10,2782.05,USD,2782.05,3169.98,Investing,Europe,Real Estate,,2025-10-20,2025-11-13T23:19:16.991062,0
-PE014,Gamma Fund VI,Blackstone Group,Private Equity,Distressed,2021,2021-09-27,501.83,USD,501.83,560.04,Harvesting,Global,Multi-Sector,Citco,2025-09-12,2025-11-13T23:19:16.991062,0
-PE015,Summit Fund III,Vista Equity Partners,Private Equity,Growth Equity,2016,2016-05-17,3487.34,USD,3487.34,,Investing,Middle East,Consumer,SS&C Technologies,2025-11-08,2025-11-13T23:19:16.991062,0
-PE016,Omega Fund II,Vista Equity Partners,Private Equity,Buyout,2027,2018-08-20,4323.82,USD,4323.82,4868.42,Investing,Middle East,Real Estate,Northern Trust,2025-08-20,2025-11-13T23:19:16.991062,0
-PE017,Delta Fund III,Andreessen Horowitz,Private Equity,Buyout,2016,2016-07-08,8.652983,JPY,1291.49,8.739882,Investing,North America,Multi-Sector,SS&C Technologies,2025-09-05,2025-11-13T23:19:16.991062,0
-PE018,Beta Fund I,TPG Capital,Private Equity,Distressed,2022,2022-10-27,3736.73,USD,3736.73,4146.18,Investing,Middle East,Multi-Sector,Northern Trust,2025-08-22,2025-11-13T23:19:16.991062,0
-PE019,Summit Fund I,Carlyle Group,Private Equity,Distressed,1985,1985-01-15,1576.61,USD,1576.61,1650.55,Harvesting,Asia Pacific,Healthcare,SS&C Technologies,2025-08-15,2025-11-13T23:19:16.991062,0
-PE020,Prime Fund III,TPG Capital,Private Equity,Growth Equity,2018,2018-02-14,2334.2,USD,2334.2,2430.76,Liquidated,Global,Technology,BNY Mellon,2025-09-24,2025-11-13T23:19:16.991062,0
-PE021,Omega Fund I,TPG Capital,Private Equity,Mezzanine,2015,2015-06-10,4941.1128,GBP,3890.64,5355.1963,Investing,Global,Industrials,Citco,2025-09-23,2025-11-13T23:19:16.991062,0
-PE022,Peak Fund V,Warburg Pincus,Private Equity,Distressed,2021,2021-12-06,5438.4956,GBP,4282.28,6019.4571,Liquidated,Latin America,Technology,SS&C Technologies,2025-09-13,2025-11-13T23:19:16.991062,0
-PE023,Beta Fund IV,Bridgewater Associates,Private Equity,Growth Equity,2015,2015-05-13,1973.09,USD,1973.09,2320.21,Harvesting,Global,Consumer,BNY Mellon,2025-09-03,2025-11-13T23:19:16.991062,0
-PE024,Beta Fund V,Benchmark Capital,Private Equity,Buyout,2020,2020-04-21,-10.05,JPY,-1500.0,,Fundraising,Europe,Industrials,BNY Mellon,2025-10-12,2025-11-13T23:19:16.991062,0
-PE025,Omega Fund VI,Acme Capital Partners,Private Equity,Growth Equity,2022,2022-11-04,3037.86,USD,3037.86,3503.81,Investing,Latin America,Healthcare,BNY Mellon,2025-10-03,2025-11-13T23:19:16.991062,0
-PE026,Prime Fund V,Andreessen Horowitz,Private Equity,Buyout,2024,2024-01-10,3925.6843000000003,GBP,3091.09,4664.8624,Investing,North America,Industrials,SS&C Technologies,2025-08-16,2025-11-13T23:19:16.991062,0
-PE027,Delta Fund VI,Andreessen Horowitz,Private Equity,Buyout,2024,2024-01-12,2897.35,USD,2897.35,,Harvesting,North America,Real Estate,BNY Mellon,2025-02-13,2025-11-13T23:19:16.991062,0
-PE028,Beta Fund I,Andreessen Horowitz,Private Equity,Mezzanine,2017,2017-07-06,25.473936000000002,JPY,3802.08,,Liquidated,Global,Real Estate,BNY Mellon,2025-10-01,2025-11-13T23:19:16.991062,0
-PE029,Delta Fund III,Vista Equity Partners,Private Equity,Growth Equity,2016,2016-05-15,1597.39,USD,1597.39,1718.47,Fundraising,Global,Energy,,2025-10-09,2025-11-13T23:19:16.991062,0
-PE030,Beta Fund II,Acme Capital Partners,Private Equity,Distressed,2019,2019-10-23,4460.48,USD,4460.48,4630.92,Investing,Middle East,Real Estate,Northern Trust,2025-08-15,2025-11-13T23:19:16.991062,0
-PE031,Beta Fund IV,TPG Capital,Private Equity,Mezzanine,2022,2022-08-26,5000.0,USD,5000.0,3000.0,Harvesting,Global,Energy,Citco,2025-09-30,2025-11-13T23:19:16.991062,0
-PE032,Omega Fund IV,Benchmark Capital,Private Equity,Distressed,2022,2022-05-10,1631.32,USD,1631.32,,Fundraising,Middle East,Financial Services,SS&C Technologies,2025-10-07,2025-11-13T23:19:16.991062,0
-PE033,Prime Fund II,Carlyle Group,Private Equity,Distressed,2016,2016-04-10,1523.67,USD,1523.67,,Investing,Asia Pacific,Technology,,2025-08-14,2025-11-13T23:19:16.991062,0
-PE034,Prime Fund III,Tiger Global Management,Private Equity,Growth Equity,2022,2022-02-28,555.19,USD,555.19,593.02,Fundraising,Asia Pacific,Multi-Sector,SS&C Technologies,2025-01-11,2025-11-13T23:19:16.991062,0
-PE035,Delta Fund VI,Bridgewater Associates,Private Equity,Buyout,2024,2024-11-22,741.24,USD,741.24,786.28,Investing,North America,Real Estate,State Street,2025-10-14,2025-11-13T23:19:16.991062,0
-PE036,Omega Fund VI,Vista Equity Partners,Private Equity,Mezzanine,2022,2022-08-10,4895.240000000001,CHF,4370.75,5503.254400000001,Fundraising,Europe,Industrials,,2025-03-16,2025-11-13T23:19:16.991062,0
-PE037,Beta Fund V,Blackstone Group,Private Equity,Growth Equity,2023,2023-02-06,512.04,USD,512.04,541.87,Investing,Asia Pacific,Consumer,State Street,2025-08-16,2025-11-13T23:19:16.991062,0
-PE038,Gamma Fund V,Blackstone Group,Private Equity,Growth Equity,2019,2019-11-19,4413.6564,GBP,3475.32,4894.3641,Investing,Asia Pacific,Financial Services,SS&C Technologies,2025-10-03,2025-11-13T23:19:16.991062,0
-PE039,Delta Fund II,Blackstone Group,Private Equity,Distressed,2022,2022-02-15,3599.05,USD,3599.05,3959.29,Liquidated,Global,Healthcare,Northern Trust,2025-10-01,2025-11-13T23:19:16.991062,0
-PE040,Peak Fund IV,Silver Lake Partners,Private Equity,Distressed,2015,2015-02-08,5214.888000000001,EUR,4828.6,6206.533200000001,Harvesting,Latin America,Technology,BNY Mellon,2025-09-06,2025-11-13T23:19:16.991062,0
-PE041,Omega Fund VI,Warburg Pincus,Private Equity,Mezzanine,2019,2019-03-19,2658.3984,EUR,2461.48,2908.2888000000003,Liquidated,Asia Pacific,Energy,State Street,2025-09-30,2025-11-13T23:19:16.991062,0
-PE042,Delta Fund VI,KKR & Co,Private Equity,Mezzanine,2022,2022-05-22,5133.6396,EUR,4753.37,5600.620800000001,Harvesting,Asia Pacific,Energy,SS&C Technologies,2025-09-07,2025-11-13T23:19:16.991062,0
-PE043,Prime Fund I,TPG Capital,Private Equity,Buyout,2026,2023-08-14,743.92,USD,743.92,818.09,Liquidated,North America,Industrials,Citco,2025-03-04,2025-11-13T23:19:16.991062,0
-PE044,Delta Fund I,KKR & Co,Private Equity,Mezzanine,2022,2022-02-01,4879.16,USD,4879.16,,Investing,Asia Pacific,Technology,Northern Trust,2025-04-17,2025-11-13T23:19:16.991062,0
-PE045,Prime Fund IV,Apollo Global Management,Private Equity,Mezzanine,2016,2016-11-27,1514.9449,GBP,1192.87,,Harvesting,Global,Multi-Sector,,2025-09-02,2025-11-13T23:19:16.991062,0
-PE046,Omega Fund I,Warburg Pincus,Private Equity,Growth Equity,2021,2021-04-20,3539.5915999999997,GBP,2787.08,3735.1462,Liquidated,Asia Pacific,Consumer,BNY Mellon,2025-10-04,2025-11-13T23:19:16.991062,0
-PE047,Delta Fund V,Blackstone Group,Private Equity,Mezzanine,2017,2017-08-18,2679.54,USD,2679.54,2881.69,Harvesting,Europe,Industrials,Northern Trust,2025-09-20,2025-11-13T23:19:16.991062,0
-PE048,Prime Fund II,Bridgewater Associates,Private Equity,Buyout,2020,2020-12-16,3967.4124000000006,EUR,3673.53,4494.0419999999995,Investing,Global,Technology,SS&C Technologies,2025-09-30,2025-11-13T23:19:16.991062,0
-PE049,Peak Fund IV,Renaissance Technologies,Private Equity,Buyout,2022,2022-02-17,4596.99,USD,4596.99,,Investing,North America,Multi-Sector,BNY Mellon,2025-08-24,2025-11-13T23:19:16.991062,0
-PE050,Peak Fund II,Vista Equity Partners,Private Equity,Mezzanine,2016,2016-06-28,3534.61,USD,3534.61,3977.71,Liquidated,Latin America,Technology,,2025-08-16,2025-11-13T23:19:16.991062,0
-HF001,Peak Fund II,Warburg Pincus,Hedge Fund,Event Driven,2018,2018-12-03,7075.6,USD,7075.6,8310.4,Liquidated,Europe,Consumer,,2025-05-02,2025-11-13T23:19:16.991062,0
-HF002,Peak Fund II,Tiger Global Management,Hedge Fund,Event Driven,2020,2020-06-14,3037.98,USD,3037.98,3519.51,Investing,Europe,Healthcare,State Street,2025-08-16,2025-11-13T23:19:16.991062,0
-HF003,Omega Fund VI,Bridgewater Associates,Hedge Fund,Global Macro,2022,2022-10-05,4250.64,USD,4250.64,4817.54,Liquidated,Asia Pacific,Financial Services,SS&C Technologies,2025-08-28,2025-11-13T23:19:16.991062,0
-HF004,Summit Fund V,Bridgewater Associates,Hedge Fund,Event Driven,2021,2021-12-09,7395.7,USD,7395.7,8657.9,Fundraising,Europe,Real Estate,Northern Trust,2025-08-14,2025-11-13T23:19:16.991062,0
-HF005,Summit Fund III,Silver Lake Partners,Hedge Fund,Event Driven,2015,2015-11-13,4842.73,USD,4842.73,5563.98,Fundraising,Latin America,Multi-Sector,BNY Mellon,2025-10-13,2025-11-13T23:19:16.991062,0
-HF006,Delta Fund II,Vista Equity Partners,Hedge Fund,Multi-Strategy,2020,2020-04-21,3661.85,USD,3661.85,4223.92,Investing,Middle East,Healthcare,,2025-10-03,2025-11-13T23:19:16.991062,0
-HF007,Peak Fund I,Acme Capital Partners,Hedge Fund,Quantitative,2015,2015-10-12,11253.04,USD,11253.04,,Liquidated,Europe,Industrials,SS&C Technologies,2025-09-26,2025-11-13T23:19:16.991062,0
-HF008,Alpha Fund I,Andreessen Horowitz,Hedge Fund,Multi-Strategy,2023,2023-05-27,4195.5974,GBP,3303.62,5007.3433,Harvesting,Middle East,Energy,BNY Mellon,2025-11-02,2025-11-13T23:19:16.991062,0
-HF009,Gamma Fund VI,Silver Lake Partners,Hedge Fund,Global Macro,2018,2018-11-24,10441.69,USD,10441.69,11605.55,Fundraising,Global,Technology,Citco,2025-02-11,2025-11-13T23:19:16.991062,0
-HF010,Gamma Fund VI,Bridgewater Associates,Hedge Fund,Event Driven,2024,2024-07-27,9939.69,USD,9939.69,10876.96,Harvesting,Latin America,Industrials,State Street,2025-09-13,2025-11-13T23:19:16.991062,0
-HF011,Summit Fund V,Acme Capital Partners,Hedge Fund,Event Driven,2021,2021-02-05,1634.86,USD,1634.86,1672.83,Investing,Latin America,Financial Services,Citco,2025-08-14,2025-11-13T23:19:16.991062,0
-HF012,Beta Fund IV,Vista Equity Partners,Hedge Fund,Multi-Strategy,2021,2021-10-24,14188.9353,GBP,11172.39,16554.7802,Liquidated,Asia Pacific,Technology,State Street,2025-09-16,2025-11-13T23:19:16.991062,0
-HF013,Summit Fund V,Renaissance Technologies,Hedge Fund,Global Macro,2020,2020-02-22,7801.2163,GBP,6142.69,7895.6916,Harvesting,Europe,Healthcare,,2025-10-31,2025-11-13T23:19:16.991062,0
-HF014,Peak Fund V,Tiger Global Management,Hedge Fund,Global Macro,2024,2024-01-02,12015.12,USD,12015.12,,Investing,North America,Industrials,Northern Trust,2025-10-13,2025-11-13T23:19:16.991062,0
-HF015,Omega Fund V,Bridgewater Associates,Hedge Fund,Event Driven,2017,2017-10-01,5467.6720000000005,CHF,4881.85,6058.416000000001,Investing,North America,Technology,SS&C Technologies,2025-10-12,2025-11-13T23:19:16.991062,0
-HF016,Alpha Fund VI,Blackstone Group,Hedge Fund,Multi-Strategy,2020,2020-01-06,4715.15,USD,4715.15,4822.32,Fundraising,Global,Multi-Sector,BNY Mellon,2025-10-29,2025-11-13T23:19:16.991062,0
-HF017,Beta Fund VI,KKR & Co,Hedge Fund,Quantitative,2023,2023-04-20,1735.6788,EUR,1607.11,1916.6976000000002,Liquidated,Middle East,Technology,SS&C Technologies,2025-09-21,2025-11-13T23:19:16.991062,0
-HF018,Omega Fund VI,TPG Capital,Hedge Fund,Quantitative,2016,2016-08-23,13735.81,USD,13735.81,,Investing,North America,Financial Services,,2025-09-02,2025-11-13T23:19:16.991062,0
-HF019,Prime Fund I,Warburg Pincus,Hedge Fund,Event Driven,2021,2021-10-17,5128.57,USD,5128.57,5942.06,Fundraising,Middle East,Industrials,Citco,2025-09-20,2025-11-13T23:19:16.991062,0
-HF020,Omega Fund IV,Warburg Pincus,Hedge Fund,Event Driven,2022,2022-07-14,11214.58,USD,11214.58,11786.28,Investing,Middle East,Multi-Sector,SS&C Technologies,2025-10-31,2025-11-13T23:19:16.991062,0
-HF021,Gamma Fund IV,Blackstone Group,Hedge Fund,Quantitative,2016,2016-12-24,6217.06,USD,6217.06,,Harvesting,Middle East,Healthcare,Citco,2025-09-18,2025-11-13T23:19:16.991062,0
-HF022,Alpha Fund VI,Bridgewater Associates,Hedge Fund,Long/Short Equity,2019,2019-10-10,5923.05,USD,5923.05,,Liquidated,Europe,Healthcare,Citco,2025-10-28,2025-11-13T23:19:16.991062,0
-HF023,Omega Fund V,TPG Capital,Hedge Fund,Event Driven,2024,2024-04-26,7007.57,USD,7007.57,7878.92,Fundraising,Latin America,Consumer,SS&C Technologies,2025-10-03,2025-11-13T23:19:16.991062,0
-HF024,Gamma Fund V,Renaissance Technologies,Hedge Fund,Event Driven,2020,2020-01-06,13178.08,USD,13178.08,13552.01,Fundraising,North America,Industrials,Citco,2025-10-22,2025-11-13T23:19:16.991062,0
-HF025,Beta Fund VI,Acme Capital Partners,Hedge Fund,Event Driven,2019,2019-12-11,11875.7,USD,11875.7,,Fundraising,Europe,Financial Services,BNY Mellon,2025-04-26,2025-11-13T23:19:16.991062,0
-HF026,Omega Fund VI,KKR & Co,Hedge Fund,Event Driven,2022,2022-11-14,7799.26,USD,7799.26,,Fundraising,Asia Pacific,Real Estate,SS&C Technologies,2025-08-28,2025-11-13T23:19:16.991062,0
-HF027,Delta Fund II,TPG Capital,Hedge Fund,Quantitative,2023,2023-11-10,1635.84,USD,1635.84,1638.35,Harvesting,Europe,Financial Services,BNY Mellon,2025-10-27,2025-11-13T23:19:16.991062,0
-HF028,Prime Fund II,Acme Capital Partners,Hedge Fund,Long/Short Equity,2022,2022-12-14,3459.73,USD,3459.73,3805.88,Harvesting,North America,Real Estate,BNY Mellon,2025-05-12,2025-11-13T23:19:16.991062,0
-HF029,Alpha Fund V,TPG Capital,Hedge Fund,Quantitative,2016,2016-06-19,7009.98,USD,7009.98,7415.88,Liquidated,North America,Energy,SS&C Technologies,2025-09-14,2025-11-13T23:19:16.991062,0
-HF030,Prime Fund IV,Apollo Global Management,Hedge Fund,Event Driven,2016,2016-07-28,2482.08,USD,2482.08,2521.12,Harvesting,Middle East,Energy,SS&C Technologies,2025-11-02,2025-11-13T23:19:16.991062,0
-VC001,Alpha Fund I,Renaissance Technologies,Venture Capital,Early Stage,2023,2023-09-07,1821.25,USD,1821.25,2119.55,Investing,Europe,Healthcare,SS&C Technologies,2025-08-26,2025-11-13T23:19:16.991062,0
-VC002,Prime Fund III,Tiger Global Management,Venture Capital,Late Stage,2016,2016-03-25,1293.1,USD,1293.1,1442.96,Harvesting,Middle East,Energy,SS&C Technologies,2025-01-23,2025-11-13T23:19:16.991062,0
-VC003,Delta Fund I,Tiger Global Management,Venture Capital,Seed,2019,2019-10-02,768.69,USD,768.69,774.47,Harvesting,Asia Pacific,Healthcare,State Street,2025-10-31,2025-11-13T23:19:16.991062,0
-VC004,Delta Fund V,Warburg Pincus,Venture Capital,Growth,2022,2022-10-18,2066.0832,EUR,1913.04,,Investing,Asia Pacific,Multi-Sector,Northern Trust,2025-09-15,2025-11-13T23:19:16.991062,0
-VC005,Beta Fund I,Apollo Global Management,Venture Capital,Early Stage,2020,2020-12-03,1058.64,USD,1058.64,,Liquidated,Global,Financial Services,Citco,2025-09-23,2025-11-13T23:19:16.991062,0
-VC006,Peak Fund I,TPG Capital,Venture Capital,Growth,2020,2020-11-20,199.49,USD,199.49,212.64,Liquidated,Asia Pacific,Consumer,State Street,2025-08-26,2025-11-13T23:19:16.991062,0
-VC007,Gamma Fund II,Benchmark Capital,Venture Capital,Late Stage,2020,2020-02-19,1728.2921999999999,GBP,1360.86,1955.0634000000002,Liquidated,Europe,Healthcare,Citco,2025-09-30,2025-11-13T23:19:16.991062,0
-VC008,Peak Fund V,Benchmark Capital,Venture Capital,Late Stage,2023,2023-02-21,1373.87,USD,1373.87,,Harvesting,Europe,Industrials,Citco,2025-10-18,2025-11-13T23:19:16.991062,0
-VC009,Gamma Fund III,Tiger Global Management,Venture Capital,Late Stage,2017,2017-03-03,714.96,EUR,662.0,792.1476000000001,Fundraising,Middle East,Energy,,2025-08-27,2025-11-13T23:19:16.991062,0
-VC010,Summit Fund II,Silver Lake Partners,Venture Capital,Growth,2017,2017-03-06,1813.9248,EUR,1679.56,1873.9836000000003,Liquidated,North America,Real Estate,Citco,2025-09-16,2025-11-13T23:19:16.991062,0
-VC011,Delta Fund VI,Andreessen Horowitz,Venture Capital,Seed,2022,2022-04-18,3.7146139999999996,JPY,554.42,4.386222,Investing,Asia Pacific,Multi-Sector,Northern Trust,2025-09-24,2025-11-13T23:19:16.991062,0
-VC012,Omega Fund IV,Benchmark Capital,Venture Capital,Growth,2017,2017-04-26,1586.0521999999999,GBP,1248.86,,Liquidated,Asia Pacific,Healthcare,State Street,2025-10-27,2025-11-13T23:19:16.991062,0
-VC013,Prime Fund IV,Warburg Pincus,Venture Capital,Seed,2016,2016-03-09,953.71,USD,953.71,971.2,Investing,Global,Energy,,2025-09-22,2025-11-13T23:19:16.991062,0
-VC014,Peak Fund I,KKR & Co,Venture Capital,Seed,2018,2018-07-03,812.33,USD,812.33,948.67,Harvesting,Europe,Financial Services,SS&C Technologies,2025-09-12,2025-11-13T23:19:16.991062,0
-VC015,Delta Fund II,Blackstone Group,Venture Capital,Late Stage,2022,2022-08-20,109.98,USD,109.98,,Investing,Latin America,Real Estate,SS&C Technologies,2025-10-04,2025-11-13T23:19:16.991062,0
-VC016,Beta Fund III,Apollo Global Management,Venture Capital,Early Stage,2015,2015-04-14,1314.01,USD,1314.01,,Liquidated,Latin America,Technology,State Street,2025-10-24,2025-11-13T23:19:16.991062,0
-VC017,Alpha Fund V,Blackstone Group,Venture Capital,Seed,2021,2021-01-20,770.35,USD,770.35,,Fundraising,Latin America,Energy,SS&C Technologies,2025-09-08,2025-11-13T23:19:16.991062,0
-VC018,Delta Fund V,Acme Capital Partners,Venture Capital,Early Stage,2021,2021-08-02,1464.7024000000001,CHF,1307.77,,Fundraising,Asia Pacific,Healthcare,Citco,2025-08-23,2025-11-13T23:19:16.991062,0
-VC019,Delta Fund I,Sequoia Capital,Venture Capital,Early Stage,2024,2024-12-25,731.79,USD,731.79,850.85,Investing,Middle East,Multi-Sector,,2025-10-19,2025-11-13T23:19:16.991062,0
-VC020,Beta Fund VI,Benchmark Capital,Venture Capital,Late Stage,2016,2016-12-25,1892.85,USD,1892.85,,Investing,North America,Energy,,2025-09-03,2025-11-13T23:19:16.991062,0
-VC021,Alpha Fund II,Silver Lake Partners,Venture Capital,Growth,2019,2019-01-25,1329.11,USD,1329.11,1341.82,Harvesting,Asia Pacific,Healthcare,BNY Mellon,2025-09-21,2025-11-13T23:19:16.991062,0
-VC022,Beta Fund I,Acme Capital Partners,Venture Capital,Growth,2021,2021-06-06,1042.79,USD,1042.79,1151.09,Fundraising,Middle East,Real Estate,SS&C Technologies,2025-10-19,2025-11-13T23:19:16.991062,0
-VC023,Prime Fund I,Benchmark Capital,Venture Capital,Seed,2020,2020-02-03,723.05,USD,723.05,826.83,Investing,Middle East,Multi-Sector,Citco,2025-02-15,2025-11-13T23:19:16.991062,0
-VC024,Delta Fund III,Carlyle Group,Venture Capital,Growth,2019,2019-11-26,1901.02,USD,1901.02,2039.15,Investing,North America,Financial Services,BNY Mellon,2025-09-16,2025-11-13T23:19:16.991062,0
-VC025,Peak Fund II,Acme Capital Partners,Venture Capital,Early Stage,2017,2017-02-08,1579.18,USD,1579.18,1758.34,Investing,Middle East,Multi-Sector,,2025-11-02,2025-11-13T23:19:16.991062,0
+PE001,Beta Fund I,Silver Lake Partners,Private Equity,Buyout,2024,2024-08-17,4637.24,USD,4637.24,,Fundraising,Europe,Healthcare,Northern Trust,2025-10-12,2025-11-14T02:38:41.785264,0
+PE002,Omega Fund II,KKR & Co,Private Equity,Mezzanine,2016,2016-10-08,3105.14,USD,3105.14,,Harvesting,Asia Pacific,Industrials,State Street,2025-10-09,2025-11-14T02:38:41.785264,0
+PE003,Delta Fund II,Benchmark Capital,Private Equity,Mezzanine,2017,2017-11-21,1849.99,USD,1849.99,1876.83,Liquidated,Latin America,Healthcare,SS&C Technologies,2025-10-09,2025-11-14T02:38:41.785264,0
+PE004,Beta Fund VI,Renaissance Technologies,Private Equity,Growth Equity,2020,2020-02-08,2162.87,USD,2162.87,2467.2,Fundraising,Middle East,Consumer,,2025-04-12,2025-11-14T02:38:41.785264,0
+PE005,Beta Fund V,Renaissance Technologies,Private Equity,Distressed,2016,2016-02-24,2989.51,USD,2989.51,3418.57,Investing,Middle East,Consumer,Northern Trust,2025-11-05,2025-11-14T02:38:41.785264,0
+PE006,Summit Fund I,Sequoia Capital,Private Equity,Buyout,2021,2021-05-02,557.2368000000001,EUR,515.96,586.4292,Liquidated,Latin America,Real Estate,Northern Trust,2024-11-21,2025-11-14T02:38:41.785264,0
+PE007,Alpha Fund I,Sequoia Capital,Private Equity,Growth Equity,2023,2023-01-27,2161.47,USD,2161.47,2179.55,Harvesting,North America,Energy,SS&C Technologies,2025-10-29,2025-11-14T02:38:41.785264,0
+PE008,Delta Fund II,Warburg Pincus,Private Equity,Distressed,2023,2023-07-20,-317.5,GBP,-250.0,,Investing,Europe,Real Estate,SS&C Technologies,2025-09-30,2025-11-14T02:38:41.785264,0
+PE009,Alpha Fund V,Blackstone Group,Private Equity,Mezzanine,2018,2018-05-06,4043.19,USD,4043.19,4737.48,Investing,Europe,Multi-Sector,Citco,2025-10-13,2025-11-14T02:38:41.785264,0
+PE010,Delta Fund VI,Tiger Global Management,Private Equity,Growth Equity,2015,2015-11-07,2293.1,USD,2293.1,,Harvesting,Asia Pacific,Real Estate,State Street,2025-09-30,2025-11-14T02:38:41.785264,0
+PE011,Summit Fund II,Warburg Pincus,Private Equity,Buyout,2016,2016-05-06,3486.1680000000006,CHF,3112.65,,Liquidated,Asia Pacific,Energy,Citco,2025-10-28,2025-11-14T02:38:41.785264,0
+PE012,Peak Fund V,Tiger Global Management,Private Equity,Mezzanine,2024,2024-04-09,699.74,USD,699.74,812.61,Investing,Asia Pacific,Real Estate,SS&C Technologies,2025-09-30,2025-11-14T02:38:41.785264,0
+PE013,Omega Fund I,TPG Capital,Private Equity,Distressed,2016,2016-12-10,2782.05,USD,2782.05,3169.98,Investing,Europe,Real Estate,,2025-10-20,2025-11-14T02:38:41.785264,0
+PE014,Gamma Fund VI,Blackstone Group,Private Equity,Distressed,2021,2021-09-27,501.83,USD,501.83,560.04,Harvesting,Global,Multi-Sector,Citco,2025-09-12,2025-11-14T02:38:41.785264,0
+PE015,Summit Fund III,Vista Equity Partners,Private Equity,Growth Equity,2016,2016-05-17,3487.34,USD,3487.34,,Investing,Middle East,Consumer,SS&C Technologies,2025-11-08,2025-11-14T02:38:41.785264,0
+PE016,Omega Fund II,Vista Equity Partners,Private Equity,Buyout,2027,2018-08-20,4323.82,USD,4323.82,4868.42,Investing,Middle East,Real Estate,Northern Trust,2025-08-20,2025-11-14T02:38:41.785264,0
+PE017,Delta Fund III,Andreessen Horowitz,Private Equity,Buyout,2016,2016-07-08,8.652983,JPY,1291.49,8.739882,Investing,North America,Multi-Sector,SS&C Technologies,2025-09-05,2025-11-14T02:38:41.785264,0
+PE018,Beta Fund I,TPG Capital,Private Equity,Distressed,2022,2022-10-27,3736.73,USD,3736.73,4146.18,Investing,Middle East,Multi-Sector,Northern Trust,2025-08-22,2025-11-14T02:38:41.785264,0
+PE019,Summit Fund I,Carlyle Group,Private Equity,Distressed,1985,1985-01-15,1576.61,USD,1576.61,1650.55,Harvesting,Asia Pacific,Healthcare,SS&C Technologies,2025-08-15,2025-11-14T02:38:41.785264,0
+PE020,Prime Fund III,TPG Capital,Private Equity,Growth Equity,2018,2018-02-14,2334.2,USD,2334.2,2430.76,Liquidated,Global,Technology,BNY Mellon,2025-09-24,2025-11-14T02:38:41.785264,0
+PE021,Omega Fund I,TPG Capital,Private Equity,Mezzanine,2015,2015-06-10,4941.1128,GBP,3890.64,5355.1963,Investing,Global,Industrials,Citco,2025-09-23,2025-11-14T02:38:41.785264,0
+PE022,Peak Fund V,Warburg Pincus,Private Equity,Distressed,2021,2021-12-06,5438.4956,GBP,4282.28,6019.4571,Liquidated,Latin America,Technology,SS&C Technologies,2025-09-13,2025-11-14T02:38:41.785264,0
+PE023,Beta Fund IV,Bridgewater Associates,Private Equity,Growth Equity,2015,2015-05-13,1973.09,USD,1973.09,2320.21,Harvesting,Global,Consumer,BNY Mellon,2025-09-03,2025-11-14T02:38:41.785264,0
+PE024,Beta Fund V,Benchmark Capital,Private Equity,Buyout,2020,2020-04-21,-10.05,JPY,-1500.0,,Fundraising,Europe,Industrials,BNY Mellon,2025-10-12,2025-11-14T02:38:41.785264,0
+PE025,Omega Fund VI,Acme Capital Partners,Private Equity,Growth Equity,2022,2022-11-04,3037.86,USD,3037.86,3503.81,Investing,Latin America,Healthcare,BNY Mellon,2025-10-03,2025-11-14T02:38:41.785264,0
+PE026,Prime Fund V,Andreessen Horowitz,Private Equity,Buyout,2024,2024-01-10,3925.6843000000003,GBP,3091.09,4664.8624,Investing,North America,Industrials,SS&C Technologies,2025-08-16,2025-11-14T02:38:41.785264,0
+PE027,Delta Fund VI,Andreessen Horowitz,Private Equity,Buyout,2024,2024-01-12,2897.35,USD,2897.35,,Harvesting,North America,Real Estate,BNY Mellon,2025-02-13,2025-11-14T02:38:41.785264,0
+PE028,Beta Fund I,Andreessen Horowitz,Private Equity,Mezzanine,2017,2017-07-06,25.473936000000002,JPY,3802.08,,Liquidated,Global,Real Estate,BNY Mellon,2025-10-01,2025-11-14T02:38:41.785264,0
+PE029,Delta Fund III,Vista Equity Partners,Private Equity,Growth Equity,2016,2016-05-15,1597.39,USD,1597.39,1718.47,Fundraising,Global,Energy,,2025-10-09,2025-11-14T02:38:41.785264,0
+PE030,Beta Fund II,Acme Capital Partners,Private Equity,Distressed,2019,2019-10-23,4460.48,USD,4460.48,4630.92,Investing,Middle East,Real Estate,Northern Trust,2025-08-15,2025-11-14T02:38:41.785264,0
+PE031,Beta Fund IV,TPG Capital,Private Equity,Mezzanine,2022,2022-08-26,5000.0,USD,5000.0,3000.0,Harvesting,Global,Energy,Citco,2025-09-30,2025-11-14T02:38:41.785264,0
+PE032,Omega Fund IV,Benchmark Capital,Private Equity,Distressed,2022,2022-05-10,1631.32,USD,1631.32,,Fundraising,Middle East,Financial Services,SS&C Technologies,2025-10-07,2025-11-14T02:38:41.785264,0
+PE033,Prime Fund II,Carlyle Group,Private Equity,Distressed,2016,2016-04-10,1523.67,USD,1523.67,,Investing,Asia Pacific,Technology,,2025-08-14,2025-11-14T02:38:41.785264,0
+PE034,Prime Fund III,Tiger Global Management,Private Equity,Growth Equity,2022,2022-02-28,555.19,USD,555.19,593.02,Fundraising,Asia Pacific,Multi-Sector,SS&C Technologies,2025-01-11,2025-11-14T02:38:41.785264,0
+PE035,Delta Fund VI,Bridgewater Associates,Private Equity,Buyout,2024,2024-11-22,741.24,USD,741.24,786.28,Investing,North America,Real Estate,State Street,2025-10-14,2025-11-14T02:38:41.785264,0
+PE036,Omega Fund VI,Vista Equity Partners,Private Equity,Mezzanine,2022,2022-08-10,4895.240000000001,CHF,4370.75,5503.254400000001,Fundraising,Europe,Industrials,,2025-03-16,2025-11-14T02:38:41.785264,0
+PE037,Beta Fund V,Blackstone Group,Private Equity,Growth Equity,2023,2023-02-06,512.04,USD,512.04,541.87,Investing,Asia Pacific,Consumer,State Street,2025-08-16,2025-11-14T02:38:41.785264,0
+PE038,Gamma Fund V,Blackstone Group,Private Equity,Growth Equity,2019,2019-11-19,4413.6564,GBP,3475.32,4894.3641,Investing,Asia Pacific,Financial Services,SS&C Technologies,2025-10-03,2025-11-14T02:38:41.785264,0
+PE039,Delta Fund II,Blackstone Group,Private Equity,Distressed,2022,2022-02-15,3599.05,USD,3599.05,3959.29,Liquidated,Global,Healthcare,Northern Trust,2025-10-01,2025-11-14T02:38:41.785264,0
+PE040,Peak Fund IV,Silver Lake Partners,Private Equity,Distressed,2015,2015-02-08,5214.888000000001,EUR,4828.6,6206.533200000001,Harvesting,Latin America,Technology,BNY Mellon,2025-09-06,2025-11-14T02:38:41.785264,0
+PE041,Omega Fund VI,Warburg Pincus,Private Equity,Mezzanine,2019,2019-03-19,2658.3984,EUR,2461.48,2908.2888000000003,Liquidated,Asia Pacific,Energy,State Street,2025-09-30,2025-11-14T02:38:41.785264,0
+PE042,Delta Fund VI,KKR & Co,Private Equity,Mezzanine,2022,2022-05-22,5133.6396,EUR,4753.37,5600.620800000001,Harvesting,Asia Pacific,Energy,SS&C Technologies,2025-09-07,2025-11-14T02:38:41.785264,0
+PE043,Prime Fund I,TPG Capital,Private Equity,Buyout,2026,2023-08-14,743.92,USD,743.92,818.09,Liquidated,North America,Industrials,Citco,2025-03-04,2025-11-14T02:38:41.785264,0
+PE044,Delta Fund I,KKR & Co,Private Equity,Mezzanine,2022,2022-02-01,4879.16,USD,4879.16,,Investing,Asia Pacific,Technology,Northern Trust,2025-04-17,2025-11-14T02:38:41.785264,0
+PE045,Prime Fund IV,Apollo Global Management,Private Equity,Mezzanine,2016,2016-11-27,1514.9449,GBP,1192.87,,Harvesting,Global,Multi-Sector,,2025-09-02,2025-11-14T02:38:41.785264,0
+PE046,Omega Fund I,Warburg Pincus,Private Equity,Growth Equity,2021,2021-04-20,3539.5915999999997,GBP,2787.08,3735.1462,Liquidated,Asia Pacific,Consumer,BNY Mellon,2025-10-04,2025-11-14T02:38:41.785264,0
+PE047,Delta Fund V,Blackstone Group,Private Equity,Mezzanine,2017,2017-08-18,2679.54,USD,2679.54,2881.69,Harvesting,Europe,Industrials,Northern Trust,2025-09-20,2025-11-14T02:38:41.785264,0
+PE048,Prime Fund II,Bridgewater Associates,Private Equity,Buyout,2020,2020-12-16,3967.4124000000006,EUR,3673.53,4494.0419999999995,Investing,Global,Technology,SS&C Technologies,2025-09-30,2025-11-14T02:38:41.785264,0
+PE049,Peak Fund IV,Renaissance Technologies,Private Equity,Buyout,2022,2022-02-17,4596.99,USD,4596.99,,Investing,North America,Multi-Sector,BNY Mellon,2025-08-24,2025-11-14T02:38:41.785264,0
+PE050,Peak Fund II,Vista Equity Partners,Private Equity,Mezzanine,2016,2016-06-28,3534.61,USD,3534.61,3977.71,Liquidated,Latin America,Technology,,2025-08-16,2025-11-14T02:38:41.785264,0
+HF001,Peak Fund II,Warburg Pincus,Hedge Fund,Event Driven,2018,2018-12-03,7075.6,USD,7075.6,8310.4,Liquidated,Europe,Consumer,,2025-05-02,2025-11-14T02:38:41.785264,0
+HF002,Peak Fund II,Tiger Global Management,Hedge Fund,Event Driven,2020,2020-06-14,3037.98,USD,3037.98,3519.51,Investing,Europe,Healthcare,State Street,2025-08-16,2025-11-14T02:38:41.785264,0
+HF003,Omega Fund VI,Bridgewater Associates,Hedge Fund,Global Macro,2022,2022-10-05,4250.64,USD,4250.64,4817.54,Liquidated,Asia Pacific,Financial Services,SS&C Technologies,2025-08-28,2025-11-14T02:38:41.785264,0
+HF004,Summit Fund V,Bridgewater Associates,Hedge Fund,Event Driven,2021,2021-12-09,7395.7,USD,7395.7,8657.9,Fundraising,Europe,Real Estate,Northern Trust,2025-08-14,2025-11-14T02:38:41.785264,0
+HF005,Summit Fund III,Silver Lake Partners,Hedge Fund,Event Driven,2015,2015-11-13,4842.73,USD,4842.73,5563.98,Fundraising,Latin America,Multi-Sector,BNY Mellon,2025-10-13,2025-11-14T02:38:41.785264,0
+HF006,Delta Fund II,Vista Equity Partners,Hedge Fund,Multi-Strategy,2020,2020-04-21,3661.85,USD,3661.85,4223.92,Investing,Middle East,Healthcare,,2025-10-03,2025-11-14T02:38:41.785264,0
+HF007,Peak Fund I,Acme Capital Partners,Hedge Fund,Quantitative,2015,2015-10-12,11253.04,USD,11253.04,,Liquidated,Europe,Industrials,SS&C Technologies,2025-09-26,2025-11-14T02:38:41.785264,0
+HF008,Alpha Fund I,Andreessen Horowitz,Hedge Fund,Multi-Strategy,2023,2023-05-27,4195.5974,GBP,3303.62,5007.3433,Harvesting,Middle East,Energy,BNY Mellon,2025-11-02,2025-11-14T02:38:41.785264,0
+HF009,Gamma Fund VI,Silver Lake Partners,Hedge Fund,Global Macro,2018,2018-11-24,10441.69,USD,10441.69,11605.55,Fundraising,Global,Technology,Citco,2025-02-11,2025-11-14T02:38:41.785264,0
+HF010,Gamma Fund VI,Bridgewater Associates,Hedge Fund,Event Driven,2024,2024-07-27,9939.69,USD,9939.69,10876.96,Harvesting,Latin America,Industrials,State Street,2025-09-13,2025-11-14T02:38:41.785264,0
+HF011,Summit Fund V,Acme Capital Partners,Hedge Fund,Event Driven,2021,2021-02-05,1634.86,USD,1634.86,1672.83,Investing,Latin America,Financial Services,Citco,2025-08-14,2025-11-14T02:38:41.785264,0
+HF012,Beta Fund IV,Vista Equity Partners,Hedge Fund,Multi-Strategy,2021,2021-10-24,14188.9353,GBP,11172.39,16554.7802,Liquidated,Asia Pacific,Technology,State Street,2025-09-16,2025-11-14T02:38:41.785264,0
+HF013,Summit Fund V,Renaissance Technologies,Hedge Fund,Global Macro,2020,2020-02-22,7801.2163,GBP,6142.69,7895.6916,Harvesting,Europe,Healthcare,,2025-10-31,2025-11-14T02:38:41.785264,0
+HF014,Peak Fund V,Tiger Global Management,Hedge Fund,Global Macro,2024,2024-01-02,12015.12,USD,12015.12,,Investing,North America,Industrials,Northern Trust,2025-10-13,2025-11-14T02:38:41.785264,0
+HF015,Omega Fund V,Bridgewater Associates,Hedge Fund,Event Driven,2017,2017-10-01,5467.6720000000005,CHF,4881.85,6058.416000000001,Investing,North America,Technology,SS&C Technologies,2025-10-12,2025-11-14T02:38:41.785264,0
+HF016,Alpha Fund VI,Blackstone Group,Hedge Fund,Multi-Strategy,2020,2020-01-06,4715.15,USD,4715.15,4822.32,Fundraising,Global,Multi-Sector,BNY Mellon,2025-10-29,2025-11-14T02:38:41.785264,0
+HF017,Beta Fund VI,KKR & Co,Hedge Fund,Quantitative,2023,2023-04-20,1735.6788,EUR,1607.11,1916.6976000000002,Liquidated,Middle East,Technology,SS&C Technologies,2025-09-21,2025-11-14T02:38:41.785264,0
+HF018,Omega Fund VI,TPG Capital,Hedge Fund,Quantitative,2016,2016-08-23,13735.81,USD,13735.81,,Investing,North America,Financial Services,,2025-09-02,2025-11-14T02:38:41.785264,0
+HF019,Prime Fund I,Warburg Pincus,Hedge Fund,Event Driven,2021,2021-10-17,5128.57,USD,5128.57,5942.06,Fundraising,Middle East,Industrials,Citco,2025-09-20,2025-11-14T02:38:41.785264,0
+HF020,Omega Fund IV,Warburg Pincus,Hedge Fund,Event Driven,2022,2022-07-14,11214.58,USD,11214.58,11786.28,Investing,Middle East,Multi-Sector,SS&C Technologies,2025-10-31,2025-11-14T02:38:41.785264,0
+HF021,Gamma Fund IV,Blackstone Group,Hedge Fund,Quantitative,2016,2016-12-24,6217.06,USD,6217.06,,Harvesting,Middle East,Healthcare,Citco,2025-09-18,2025-11-14T02:38:41.785264,0
+HF022,Alpha Fund VI,Bridgewater Associates,Hedge Fund,Long/Short Equity,2019,2019-10-10,5923.05,USD,5923.05,,Liquidated,Europe,Healthcare,Citco,2025-10-28,2025-11-14T02:38:41.785264,0
+HF023,Omega Fund V,TPG Capital,Hedge Fund,Event Driven,2024,2024-04-26,7007.57,USD,7007.57,7878.92,Fundraising,Latin America,Consumer,SS&C Technologies,2025-10-03,2025-11-14T02:38:41.785264,0
+HF024,Gamma Fund V,Renaissance Technologies,Hedge Fund,Event Driven,2020,2020-01-06,13178.08,USD,13178.08,13552.01,Fundraising,North America,Industrials,Citco,2025-10-22,2025-11-14T02:38:41.785264,0
+HF025,Beta Fund VI,Acme Capital Partners,Hedge Fund,Event Driven,2019,2019-12-11,11875.7,USD,11875.7,,Fundraising,Europe,Financial Services,BNY Mellon,2025-04-26,2025-11-14T02:38:41.785264,0
+HF026,Omega Fund VI,KKR & Co,Hedge Fund,Event Driven,2022,2022-11-14,7799.26,USD,7799.26,,Fundraising,Asia Pacific,Real Estate,SS&C Technologies,2025-08-28,2025-11-14T02:38:41.785264,0
+HF027,Delta Fund II,TPG Capital,Hedge Fund,Quantitative,2023,2023-11-10,1635.84,USD,1635.84,1638.35,Harvesting,Europe,Financial Services,BNY Mellon,2025-10-27,2025-11-14T02:38:41.785264,0
+HF028,Prime Fund II,Acme Capital Partners,Hedge Fund,Long/Short Equity,2022,2022-12-14,3459.73,USD,3459.73,3805.88,Harvesting,North America,Real Estate,BNY Mellon,2025-05-12,2025-11-14T02:38:41.785264,0
+HF029,Alpha Fund V,TPG Capital,Hedge Fund,Quantitative,2016,2016-06-19,7009.98,USD,7009.98,7415.88,Liquidated,North America,Energy,SS&C Technologies,2025-09-14,2025-11-14T02:38:41.785264,0
+HF030,Prime Fund IV,Apollo Global Management,Hedge Fund,Event Driven,2016,2016-07-28,2482.08,USD,2482.08,2521.12,Harvesting,Middle East,Energy,SS&C Technologies,2025-11-02,2025-11-14T02:38:41.785264,0
+VC001,Alpha Fund I,Renaissance Technologies,Venture Capital,Early Stage,2023,2023-09-07,1821.25,USD,1821.25,2119.55,Investing,Europe,Healthcare,SS&C Technologies,2025-08-26,2025-11-14T02:38:41.785264,0
+VC002,Prime Fund III,Tiger Global Management,Venture Capital,Late Stage,2016,2016-03-25,1293.1,USD,1293.1,1442.96,Harvesting,Middle East,Energy,SS&C Technologies,2025-01-23,2025-11-14T02:38:41.785264,0
+VC003,Delta Fund I,Tiger Global Management,Venture Capital,Seed,2019,2019-10-02,768.69,USD,768.69,774.47,Harvesting,Asia Pacific,Healthcare,State Street,2025-10-31,2025-11-14T02:38:41.785264,0
+VC004,Delta Fund V,Warburg Pincus,Venture Capital,Growth,2022,2022-10-18,2066.0832,EUR,1913.04,,Investing,Asia Pacific,Multi-Sector,Northern Trust,2025-09-15,2025-11-14T02:38:41.785264,0
+VC005,Beta Fund I,Apollo Global Management,Venture Capital,Early Stage,2020,2020-12-03,1058.64,USD,1058.64,,Liquidated,Global,Financial Services,Citco,2025-09-23,2025-11-14T02:38:41.785264,0
+VC006,Peak Fund I,TPG Capital,Venture Capital,Growth,2020,2020-11-20,199.49,USD,199.49,212.64,Liquidated,Asia Pacific,Consumer,State Street,2025-08-26,2025-11-14T02:38:41.785264,0
+VC007,Gamma Fund II,Benchmark Capital,Venture Capital,Late Stage,2020,2020-02-19,1728.2921999999999,GBP,1360.86,1955.0634000000002,Liquidated,Europe,Healthcare,Citco,2025-09-30,2025-11-14T02:38:41.785264,0
+VC008,Peak Fund V,Benchmark Capital,Venture Capital,Late Stage,2023,2023-02-21,1373.87,USD,1373.87,,Harvesting,Europe,Industrials,Citco,2025-10-18,2025-11-14T02:38:41.785264,0
+VC009,Gamma Fund III,Tiger Global Management,Venture Capital,Late Stage,2017,2017-03-03,714.96,EUR,662.0,792.1476000000001,Fundraising,Middle East,Energy,,2025-08-27,2025-11-14T02:38:41.785264,0
+VC010,Summit Fund II,Silver Lake Partners,Venture Capital,Growth,2017,2017-03-06,1813.9248,EUR,1679.56,1873.9836000000003,Liquidated,North America,Real Estate,Citco,2025-09-16,2025-11-14T02:38:41.785264,0
+VC011,Delta Fund VI,Andreessen Horowitz,Venture Capital,Seed,2022,2022-04-18,3.7146139999999996,JPY,554.42,4.386222,Investing,Asia Pacific,Multi-Sector,Northern Trust,2025-09-24,2025-11-14T02:38:41.785264,0
+VC012,Omega Fund IV,Benchmark Capital,Venture Capital,Growth,2017,2017-04-26,1586.0521999999999,GBP,1248.86,,Liquidated,Asia Pacific,Healthcare,State Street,2025-10-27,2025-11-14T02:38:41.785264,0
+VC013,Prime Fund IV,Warburg Pincus,Venture Capital,Seed,2016,2016-03-09,953.71,USD,953.71,971.2,Investing,Global,Energy,,2025-09-22,2025-11-14T02:38:41.785264,0
+VC014,Peak Fund I,KKR & Co,Venture Capital,Seed,2018,2018-07-03,812.33,USD,812.33,948.67,Harvesting,Europe,Financial Services,SS&C Technologies,2025-09-12,2025-11-14T02:38:41.785264,0
+VC015,Delta Fund II,Blackstone Group,Venture Capital,Late Stage,2022,2022-08-20,109.98,USD,109.98,,Investing,Latin America,Real Estate,SS&C Technologies,2025-10-04,2025-11-14T02:38:41.785264,0
+VC016,Beta Fund III,Apollo Global Management,Venture Capital,Early Stage,2015,2015-04-14,1314.01,USD,1314.01,,Liquidated,Latin America,Technology,State Street,2025-10-24,2025-11-14T02:38:41.785264,0
+VC017,Alpha Fund V,Blackstone Group,Venture Capital,Seed,2021,2021-01-20,770.35,USD,770.35,,Fundraising,Latin America,Energy,SS&C Technologies,2025-09-08,2025-11-14T02:38:41.785264,0
+VC018,Delta Fund V,Acme Capital Partners,Venture Capital,Early Stage,2021,2021-08-02,1464.7024000000001,CHF,1307.77,,Fundraising,Asia Pacific,Healthcare,Citco,2025-08-23,2025-11-14T02:38:41.785264,0
+VC019,Delta Fund I,Sequoia Capital,Venture Capital,Early Stage,2024,2024-12-25,731.79,USD,731.79,850.85,Investing,Middle East,Multi-Sector,,2025-10-19,2025-11-14T02:38:41.785264,0
+VC020,Beta Fund VI,Benchmark Capital,Venture Capital,Late Stage,2016,2016-12-25,1892.85,USD,1892.85,,Investing,North America,Energy,,2025-09-03,2025-11-14T02:38:41.785264,0
+VC021,Alpha Fund II,Silver Lake Partners,Venture Capital,Growth,2019,2019-01-25,1329.11,USD,1329.11,1341.82,Harvesting,Asia Pacific,Healthcare,BNY Mellon,2025-09-21,2025-11-14T02:38:41.785264,0
+VC022,Beta Fund I,Acme Capital Partners,Venture Capital,Growth,2021,2021-06-06,1042.79,USD,1042.79,1151.09,Fundraising,Middle East,Real Estate,SS&C Technologies,2025-10-19,2025-11-14T02:38:41.785264,0
+VC023,Prime Fund I,Benchmark Capital,Venture Capital,Seed,2020,2020-02-03,723.05,USD,723.05,826.83,Investing,Middle East,Multi-Sector,Citco,2025-02-15,2025-11-14T02:38:41.785264,0
+VC024,Delta Fund III,Carlyle Group,Venture Capital,Growth,2019,2019-11-26,1901.02,USD,1901.02,2039.15,Investing,North America,Financial Services,BNY Mellon,2025-09-16,2025-11-14T02:38:41.785264,0
+VC025,Peak Fund II,Acme Capital Partners,Venture Capital,Early Stage,2017,2017-02-08,1579.18,USD,1579.18,1758.34,Investing,Middle East,Multi-Sector,,2025-11-02,2025-11-14T02:38:41.785264,0
